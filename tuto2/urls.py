@@ -20,4 +20,7 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('snippets.urls')),
+    
+    #URL PARA AUTENTICACION PARA LA API NAVEGABLE
+    path('api-auth/', include('rest_framework.urls')),
 ]
